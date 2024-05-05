@@ -30,6 +30,8 @@ func main() {
 		OnStartup:        app.startup,
 		Bind: []interface{}{
 			app,
+			&Directory{},
+			&File{},
 		},
 	})
 

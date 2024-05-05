@@ -1,10 +1,10 @@
 <script>
   import {Heading, A} from "flowbite-svelte"
-  import { GetDirectory } from "$lib/wailsjs/go/main/App";
 	import { Delay } from "$lib/delay";
   let drives = [{Name:"Grabbing drive information..."}];
   (async ()=>{
     await Delay(3000)
+    drives = [{Name:"Not implemented pog!"}]
     // drives = await GetDirectory("/", false)
     console.log(drives)
   })()
